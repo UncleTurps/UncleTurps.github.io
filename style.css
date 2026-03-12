@@ -60,13 +60,22 @@ nav a {
 
 .projects {
     background: #f4f4f4;
+    text-align: center;
 }
 
 .project {
-    margin: 1rem 0;
+    margin: 1rem auto;
     padding: 1rem;
     background: #fff;
     border-radius: 5px;
+    max-width: 600px;
+}
+
+.project img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 1rem 0;
 }
 
 footer {
