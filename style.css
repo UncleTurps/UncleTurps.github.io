@@ -61,14 +61,17 @@ nav a {
 .projects {
     background: #f4f4f4;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 1rem 0;
 }
 
-.project {
-    margin: 1rem auto;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 5px;
-    max-width: 600px;
+@media (min-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .project img {
